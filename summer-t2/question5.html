@@ -29,10 +29,9 @@
         var initial = 'ofstream file("output.txt");\n' +
                       'file << "Hello, world!" << endl;\n' +
                       'file.close();\n' +
-                      'cout << result << endl;\n' +
                       'file >> "Hello, world!" >> endl; #distractor\n'+
-                      'cin << "Hello, world!" << endl; #distractor\n'+
-                      'cin >> "Hello, world!" >> endl; #distractor\n'
+                      'cout << "Hello, world!" << endl; #distractor\n'+
+                      'cout >> "Hello, world!" >> endl; #distractor\n'
 
         function displayErrors(fb) {
             if(fb.errors.length > 0) {

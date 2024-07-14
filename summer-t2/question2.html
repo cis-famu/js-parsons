@@ -9,7 +9,7 @@
     <body>
         <p>Construct a function by drag&amp;dropping and reordering lines from the
             left to the right.
-            Write a program that prints numbers from 1 to 5 using a for loop.</p>
+            Write a program that reads a line of text and prints it.</p>
         
         <div id="sortableTrash" class="sortable-code"></div>
         <div id="sortable" class="sortable-code">
@@ -26,9 +26,10 @@
         <script src="../lib/lis.js"></script>
         <script src="../parsons.js"></script>
         <script>
-        var initial = 'for (int i = 1; i <= 5; i++) {\n' +
-                      '  std::cout << i << std::endl;\n' +
-                      '}\n' 
+        var initial = 'string line;\n' +
+                      'getline(cin, line);\n' +
+                      'cout << line << endl;\n' +
+                      'cin >> line; #distractor\n' 
                       
 
         function displayErrors(fb) {
